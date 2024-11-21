@@ -29,5 +29,9 @@ Command with all arguments(for example):
 ```python main.py 4 spaceX_1.jpg```
 
 4 is frequency of publication
+
 (on the default is 4 hour)
-spaceX_1.jpg is name of file which you want to publicate to the channel(on the default is random img from dir)
+
+spaceX_1.jpg is name of file which you want to publicate
+
+to the channel(on the default is random img from dir)
