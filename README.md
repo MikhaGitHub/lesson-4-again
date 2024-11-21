@@ -18,4 +18,16 @@ Python3 should be already installed. Then use pip (or pip3, if there is a confli
 In this project, the code is handled via the command line using the argparse library.
 ![image](https://github.com/user-attachments/assets/c78147a6-773d-42dd-bfa1-152426c311f5)
 
+Go to the your directory where locate your files project
+and paste this command:
 
+```python main.py```
+This command is the default
+
+Command with all arguments(for example):
+
+```python main.py 4 spaceX_1.jpg```
+
+4 is frequency of publication
+(on the default is 4 hour)
+spaceX_1.jpg is name of file which you want to publicate to the channel(on the default is random img from dir)
