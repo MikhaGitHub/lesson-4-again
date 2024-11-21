@@ -21,6 +21,9 @@ In this project, the code is handled via the command line using the argparse lib
 Go to the your directory where locate your files project
 and paste this command:
 
+![image](https://github.com/user-attachments/assets/4b5f6fc1-286c-4760-add5-5710643ffdd7)
+
+
 ```python main.py```
 This command is the default
 
@@ -33,5 +36,8 @@ Command with all arguments(for example):
 (on the default is 4 hour)
 
 spaceX_1.jpg is name of file which you want to publicate
+
+![image](https://github.com/user-attachments/assets/d3cc2f53-c80c-47fb-b2f2-7ab026766def)
+
 
 to the channel(on the default is random img from dir)
