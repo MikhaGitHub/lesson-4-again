@@ -1,6 +1,8 @@
 # SpaceXphotos
 
 This code downloads astronomical images from different services, for example: SpaceX, Epic, APOD and other... and publishes them in a telegram channel
+![image](https://github.com/user-attachments/assets/b1121438-80e5-4723-abe5-225f174464de)
+
 
 
 ## How to install
