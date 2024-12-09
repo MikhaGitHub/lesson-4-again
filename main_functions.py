@@ -1,9 +1,9 @@
-
 from pathlib import Path
+import os
+import requests
 
 
-def downloading_img(url,filename, directory):
-    from main import requests
+def download_img(url,filename, directory):
     Path(f"/{directory}").mkdir(parents=True, exist_ok=True)
     response = requests.get(url)
     response.raise_for_status()
@@ -13,7 +13,6 @@ def downloading_img(url,filename, directory):
 
 
 def get_extension_of_file(url):
-    from main import os
     extension_file = os.path.splitext(url)
     url = extension_file[0]
     extension = extension_file[1]
