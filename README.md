@@ -27,7 +27,8 @@ Python3 should be already installed. Then use pip (or pip3, if there is a confli
 
 
 In this project, the code is handled via the command line using the argparse library.
-![image](https://github.com/user-attachments/assets/c78147a6-773d-42dd-bfa1-152426c311f5)
+![image](https://github.com/user-attachments/assets/307ea0cb-351d-4be2-b92f-a8b10277d8cc)
+
 
 Go to the your directory where locate your files project
 and paste this command:
@@ -35,7 +36,7 @@ and paste this command:
 ![image](https://github.com/user-attachments/assets/4b5f6fc1-286c-4760-add5-5710643ffdd7)
 
 
-```python main.py```
+```python {name of file}```
 This command is the default
 
 Command with all arguments(for example):
@@ -44,6 +45,9 @@ Command with all arguments(for example):
 apod.py - name file
 --folder newimages - folder in which you will download images
 ![image](https://github.com/user-attachments/assets/996b191b-b692-4406-9475-ef52ae785b6f)
+
+Use --help to view how it work
+![image](https://github.com/user-attachments/assets/8d8577fa-fc1a-457f-907a-f4e1e657a3bd)
 
 
 ![image](https://github.com/user-attachments/assets/d3cc2f53-c80c-47fb-b2f2-7ab026766def)
