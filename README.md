@@ -31,13 +31,11 @@ This command is the default
 
 Command with all arguments(for example):
 
-```python main.py 4 spaceX_1.jpg```
+```python apod.py --folder newimages```
+apod.py - name file
+--folder newimages - folder in which you will download images
+![image](https://github.com/user-attachments/assets/996b191b-b692-4406-9475-ef52ae785b6f)
 
-4 is frequency of publication
-
-(on the default is 4 hour)
-
-spaceX_1.jpg is name of file which you want to publicate
 
 ![image](https://github.com/user-attachments/assets/d3cc2f53-c80c-47fb-b2f2-7ab026766def)
 
