@@ -13,9 +13,18 @@ Link to the site: https://api.nasa.gov/#epic
 Also you should add the bot token to the code.
 All tokens and sensitive data should be hidden in the .env file.
 
+1.create your virtual environment in Python on the operating system (Linux/macOS):
+```python3 -m venv venv```
+(windows):```python -m venv```
+
+2.Activate (Linux/macOS): ```source venv/bin/activate```
+(Windows):```venv\Scripts\activate```
+
+3.Install dependencies
+`pip install -r requirements.txt`
+
 Python3 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:
 
-```pip install -r requirements.txt```
 
 In this project, the code is handled via the command line using the argparse library.
 ![image](https://github.com/user-attachments/assets/c78147a6-773d-42dd-bfa1-152426c311f5)
