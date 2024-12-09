@@ -46,8 +46,13 @@ apod.py - name file
 --folder newimages - folder in which you will download images
 ![image](https://github.com/user-attachments/assets/996b191b-b692-4406-9475-ef52ae785b6f)
 
+
 Use --help to view how it work
+
+
+
 ![image](https://github.com/user-attachments/assets/8d8577fa-fc1a-457f-907a-f4e1e657a3bd)
+
 
 
 ![image](https://github.com/user-attachments/assets/d3cc2f53-c80c-47fb-b2f2-7ab026766def)
