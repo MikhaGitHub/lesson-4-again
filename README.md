@@ -14,11 +14,11 @@ Also you should add the bot token to the code.
 All tokens and sensitive data should be hidden in the .env file.
 
 1.create your virtual environment in Python on the operating system (Linux/macOS):
-```python3 -m venv venv```
-(windows):```python -m venv```
+`python3 -m venv venv`
+(windows):`python -m venv`
 
-2.Activate (Linux/macOS): ```source venv/bin/activate```
-(Windows):```venv\Scripts\activate```
+2.Activate (Linux/macOS): `source venv/bin/activate`
+(Windows):`venv\Scripts\activate`
 
 3.Install dependencies
 `pip install -r requirements.txt`
@@ -36,12 +36,12 @@ and paste this command:
 ![image](https://github.com/user-attachments/assets/4b5f6fc1-286c-4760-add5-5710643ffdd7)
 
 
-```python {name of file}```
+`python {name of file}`
 This command is the default
 
 Command with all arguments(for example):
 
-```python apod.py --folder newimages```
+`python apod.py --folder newimages`
 apod.py - name file
 --folder newimages - folder in which you will download images
 ![image](https://github.com/user-attachments/assets/996b191b-b692-4406-9475-ef52ae785b6f)
