@@ -18,8 +18,7 @@ All tokens and sensitive data should be hidden in the .env file.
 
 
 
-```
-
+```python
 python3 -m venv venv
 ```
 
