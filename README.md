@@ -15,7 +15,13 @@ All tokens and sensitive data should be hidden in the .env file.
 
 1.create your virtual environment in Python on the operating system (Linux/macOS):
 
+
+
+
 ```python3 -m venv venv```
+
+
+
 
 
 (windows):` python -m venv`
