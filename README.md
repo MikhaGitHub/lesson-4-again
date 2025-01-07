@@ -26,13 +26,24 @@ python3 -m venv venv
 
 
 
-(windows):` python -m venv`
+(windows):
+```python
+python -m venv
+```
 
-2.Activate (Linux/macOS): `source venv/bin/activate`
-(Windows):`venv\Scripts\activate`
+2.Activate (Linux/macOS):
+```python
+source venv/bin/activate
+```
+(Windows):
+```python
+venv\Scripts\activate
+```
 
 3.Install dependencies
-`pip install -r requirements.txt`
+```python
+pip install -r requirements.txt
+```
 
 Python3 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:
 
@@ -47,12 +58,16 @@ and paste this command:
 ![image](https://github.com/user-attachments/assets/4b5f6fc1-286c-4760-add5-5710643ffdd7)
 
 
-`python {name of file}`
+```python
+python {name of file}
+```
 This command is the default
 
 Command with all arguments(for example):
 
-`python apod.py --folder newimages`
+```python
+python apod.py --folder newimages
+```
 apod.py - name file
 --folder newimages - folder in which you will download images
 ![image](https://github.com/user-attachments/assets/996b191b-b692-4406-9475-ef52ae785b6f)
