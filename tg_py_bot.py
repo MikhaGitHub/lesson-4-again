@@ -7,35 +7,29 @@ from dotenv import load_dotenv
 
 def main():
     load_dotenv()
-    secret_token_bot_tg = os.getenv("TOKEN_BOT_TG")
-    bot = telegram.Bot(token=secret_token_bot_tg)
+    secret_token_bot = os.getenv("TOKEN_BOT")
+    bot = telegram.Bot(token=secret_token_bot)
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--publication_frequency",type=int, default=4*3600,  help="display in which hours need to pulicate photos")
     parser.add_argument("--choice_photo", type=str, help="enter the name of file")
-    parser.add_argument('--folder', type=str, default="images", help="Enter name of your exesting folder")
-    parser.add_argument('--chat_id', type=str, default="@spaceX_imgs", help="Enter your chat id")
 
     args = parser.parse_args()
     frequency = args.publication_frequency * 3600
-    folder = args.folder
-    chat_id = args.chat_id
 
     while True:
         if args.choice_photo is None:
-            for root, _, files in os.walk(folder):
+            for item in os.walk("images"):
+                files = item[2]
                 random.shuffle(files)
                 for file in files:
-                    filepath = os.path.join(root, file)
-                    with open(filepath, "rb") as f:
-                        bot.send_document(chat_id=chat_id, document=f)
-                        time.sleep(frequency)
+                    bot.send_document(chat_id="@spaceX_imgs", document=open(f"images/{file}", 'rb'))
+                    time.sleep(frequency)
         else:
-            filepath = os.path.join(folder, args.choice_photo)
-            print(filepath)
-            if os.path.exists(filepath):
-                with open(filepath, "rb") as f:
-                    bot.send_document(chat_id=chat_id, document=f)
+            for item in os.walk("images"):
+                files = item[2]
+                if args.choice_photo in files:
+                    bot.send_document(chat_id="@spaceX_imgs", document=open(f"images/{args.choice_photo}", 'rb'))
                     time.sleep(frequency)
 
 if __name__ == "__main__":

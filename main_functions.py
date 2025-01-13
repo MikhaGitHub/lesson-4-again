@@ -3,15 +3,13 @@ import os
 import requests
 
 
-def download_img(url,filename, folder, payload=None):
-    response = requests.get(url, params=payload, stream=True)
+def download_img(url,filename, directory):
+    Path(f"/{directory}").mkdir(parents=True, exist_ok=True)
+    response = requests.get(url)
     response.raise_for_status()
-    os.makedirs(folder, exist_ok=True)
-    filepath = os.path.join(folder, filename)
-
-    with open(filepath, 'wb') as file:
-        for chunk in response.iter_content(chunk_size=8192):
-            file.write(chunk)
+    
+    with open(f'{directory}/{filename}', 'wb') as file:
+        file.write(response.content)
 
 
 def get_extension_of_file(url):
