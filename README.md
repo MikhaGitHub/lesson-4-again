@@ -8,10 +8,15 @@ This code downloads astronomical images from different services, for example: Sp
 ## How to install
 
 In this project { NASA APIs } requires a key.
-Link to the site: https://api.nasa.gov/#epic
+Link to the site: 
+```
+https://api.nasa.gov/#epic
+```
 
-Also you should add the bot token to the code.
-All tokens and sensitive data should be hidden in the .env file.
+Also you should add the bot token to the .env file.
+All tokens and sensitive data should be hidden in the .env file!
+![image](https://github.com/user-attachments/assets/bc52b02b-ba73-4d17-a84a-d31489daa793)
+
 
 1.create your virtual environment in Python on the operating system (Linux/macOS):
 
