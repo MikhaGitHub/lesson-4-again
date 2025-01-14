@@ -16,6 +16,5 @@ def download_img(url,filename, folder, payload=None):
 
 def get_extension_of_file(url):
     extension_file = os.path.splitext(url)
-    url = extension_file[0]
     extension = extension_file[1]
-    return extension, url
+    return extension
