@@ -6,7 +6,7 @@ import argparse
 
 
 def main():
-    load_dotenv()
+    load_dotenv(".env")
     api_key_nasa_apod = os.getenv("API_KEY_NASA")
     parser = argparse.ArgumentParser(description="This code download images from Apod NASA in your folder")
     parser.add_argument('--count', type=int, default=26, help="enter limit of images")
@@ -29,7 +29,7 @@ def main():
     for index_img, img in enumerate(apod_response.json()):
         url = img['url']
         extension = get_extension_of_file(url)
-        filename = f'nasa_apod_{index_img}{extension[0]}'
+        filename = f'nasa_apod_{index_img}{extension}'
         download_img(url,filename, folder)
 
 

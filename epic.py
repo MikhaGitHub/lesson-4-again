@@ -8,7 +8,7 @@ import argparse
 from datetime import datetime
 
 def main():
-    load_dotenv()
+    load_dotenv(".env")
     parser = argparse.ArgumentParser(description="This code download images from Apod NASA in your folder")
     parser.add_argument('--folder', type=str, default="images", help="Enter name of your exesting folder")
     args = parser.parse_args()
