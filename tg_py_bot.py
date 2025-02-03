@@ -23,21 +23,20 @@ def main():
     folder = args.folder
     chat_id = args.chat_id
 
+    if args.choice_photo:
+        filepath = os.path.join(folder, args.choice_photo)
+        if os.path.exists(filepath):
+            with open(filepath, "rb") as f:
+                bot.send_document(chat_id=chat_id, document=f)
+        return
+    
     while True:
-        if not args.choice_photo:
-            for root, _, files in os.walk(folder):
-                random.shuffle(files)
-                for file in files:
-                    filepath = os.path.join(root, file)
-                    with open(filepath, "rb") as f:
-                        bot.send_document(chat_id=chat_id, document=f)
-
-        else:
-            filepath = os.path.join(folder, args.choice_photo)
-            if os.path.exists(filepath):
+        for root, _, files in os.walk(folder):
+            random.shuffle(files)
+            for file in files:
+                filepath = os.path.join(root, file)
                 with open(filepath, "rb") as f:
                     bot.send_document(chat_id=chat_id, document=f)
-                    break
 
         time.sleep(frequency)
 

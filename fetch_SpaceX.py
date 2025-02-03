@@ -9,23 +9,15 @@ def main():
     args = parser.parse_args()
 
     url_latest = "https://api.spacexdata.com/v5/launches/latest"
-    try:
-        response = requests.get(url_latest)
-        response.raise_for_status()
-        links = response.json()["links"]["flickr"]["original"]
-    except requests.exceptions.RequestException as e:
-        print(f"Ошибка при получении данных последнего запуска: {e}")
-        return
+    response = requests.get(url_latest)
+    response.raise_for_status()
+    links = response.json()["links"]["flickr"]["original"]
 
     if not links:
         url = f"https://api.spacexdata.com/v5/launches/{args.id}"
-        try:
-            response = requests.get(url)
-            response.raise_for_status()
-            links = response.json()["links"]["flickr"]["original"]
-        except requests.exceptions.RequestException as e:
-            print(f"Ошибка при получении данных для ID запуска {args.id}: {e}")
-            return
+        response = requests.get(url)
+        response.raise_for_status()
+        links = response.json()["links"]["flickr"]["original"]
 
     for count, url in enumerate(links):
         filename = f"spaceX_{count}.jpg"
